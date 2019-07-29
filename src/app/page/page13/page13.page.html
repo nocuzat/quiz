@@ -1,0 +1,81 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+      <ion-title>
+        Section 3
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  
+  <ion-content color= "secondary">
+      <video autoplay muted loop id="myVideo">
+          <source src="/assets/quiz2.mp4" type="video/mp4">
+          </video>
+  
+      <ion-card color="secondary">
+  
+          <ion-card-header>
+          Soccer<br>
+          Question 3
+          
+          </ion-card-header>
+          
+          <ion-card-content>
+          
+          Anfield is the home of which English Premier League club<br><br>
+
+          Count Down:&nbsp;{{displayTime}}
+          
+          </ion-card-content>
+          
+        </ion-card>
+  
+  <ion-card color="secondary">
+      <ion-list>
+          <ion-radio-group [(ngModel)]="answer13">
+            <ion-list-header>
+              Answers:
+            </ion-list-header>
+    
+            <ion-item>
+              <ion-label>1 - Manchester United</ion-label>
+              <ion-radio value="Manchester United" ></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>2 – West Ham United</ion-label>
+              <ion-radio value="West Ham United"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>3 – Manchester City</ion-label>
+              <ion-radio value="Manchester City"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>4 – Liverpool</ion-label>
+              <ion-radio value="Liverpool"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>5 – Everton</ion-label>
+              <ion-radio value="Everton"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
+            </ion-card>
+  
+              <ion-button color="secondary" shape="round" expand="full" (click)="goNext()" >SUBMIT</ion-button>
+  
+  
+  
+  </ion-content>
+  
+  <ion-footer>
+      <ion-toolbar color="secondary">
+        <ion-title>Quiz App</ion-title>
+      </ion-toolbar>
+    </ion-footer>
+  
+

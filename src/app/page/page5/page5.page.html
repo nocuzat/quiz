@@ -1,0 +1,79 @@
+<ion-header>
+    <ion-toolbar color="tertiary">
+      <ion-title>
+        Section 1
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content color= "medium">
+      <video autoplay muted loop id="myVideo">
+          <source src="/assets/quiz.mp4" type="video/mp4">
+          </video>
+  
+      <ion-card color="tertiary">
+  
+          <ion-card-header>
+          General Knowledge<br>
+          Question 5
+          
+          </ion-card-header>
+          
+          <ion-card-content>
+          
+          Which of the followings are validation directives<br><br>
+
+          Count Down:&nbsp;{{displayTime}}
+          
+          </ion-card-content>
+          
+        </ion-card>
+  
+  <ion-card color="tertiary">
+      <ion-list>
+          <ion-radio-group [(ngModel)]="answer5">
+            <ion-list-header>
+              Answers:
+            </ion-list-header>
+        
+            <ion-item>
+              <ion-label>1 - ng-required</ion-label>
+              <ion-radio value="ng-required"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>2 – ng-minlength</ion-label>
+              <ion-radio value="ng-minlength"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>3 – ng-pattern</ion-label>
+              <ion-radio value="ng-pattern"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>4 – ng-maxlength</ion-label>
+              <ion-radio value="ng-maxlength"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>5 –  All of the above</ion-label>
+              <ion-radio value="All of the above"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
+            </ion-card>
+  
+              <ion-button color="tertiary" shape="round" expand="full" (click)=goNext()>SUBMIT AND GO TO SECTION 2</ion-button>
+  
+  
+  
+  </ion-content>
+  
+  <ion-footer>
+      <ion-toolbar color="tertiary">
+        <ion-title>Quiz App</ion-title>
+      </ion-toolbar>
+    </ion-footer>
+  
+

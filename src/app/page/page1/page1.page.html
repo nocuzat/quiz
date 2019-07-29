@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>
+      Section 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content color= "medium">
+    <video autoplay muted loop id="myVideo">
+        <source src="/assets/quiz.mp4" type="video/mp4">
+        </video>
+
+    <ion-card color="tertiary">
+
+        <ion-card-header>
+        General Knowledge<br><br>
+        Question 1
+        
+        </ion-card-header>
+        
+        <ion-card-content>
+        
+        Which country is the most popular country in Africa<br><br>
+
+        Count Down:&nbsp;{{displayTime}}
+        
+        </ion-card-content>
+        
+      </ion-card>
+
+<ion-card color="tertiary">
+    <ion-list>
+        <ion-radio-group [(ngModel)]="answer1">
+          <ion-list-header>
+            Answers:
+          </ion-list-header>
+  
+          <ion-item>
+            <ion-label>1 - South Africa</ion-label>
+            <ion-radio value="South Africa" ></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>2 – Nigeria</ion-label>
+            <ion-radio value="Nigeria"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>3 – Ethiopia</ion-label>
+            <ion-radio value="Ethiopia"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>4 – Cameroon</ion-label>
+            <ion-radio value="Cameroon"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>5 – Ghana</ion-label>
+            <ion-radio value="Ghana"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+          </ion-card>
+
+            <ion-button color="tertiary" shape="round" expand="full" (click)="goNext()" >SUBMIT</ion-button>
+
+
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar color="tertiary">
+      <ion-title>Quiz App</ion-title>
+    </ion-toolbar>
+  </ion-footer>

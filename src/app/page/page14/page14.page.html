@@ -1,0 +1,81 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+      <ion-title>
+        Section 3
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  
+  <ion-content color= "secondary">
+      <video autoplay muted loop id="myVideo">
+          <source src="/assets/quiz2.mp4" type="video/mp4">
+          </video>
+  
+      <ion-card color="secondary">
+  
+          <ion-card-header>
+          Soccer<br>
+          Question 4
+          
+          </ion-card-header>
+          
+          <ion-card-content>
+          
+          What are the home colors of the FC Barcelona soccer uniform <br><br>
+
+          Count Down:&nbsp;{{displayTime}}
+          
+          </ion-card-content>
+          
+        </ion-card>
+  
+  <ion-card color="secondary">
+      <ion-list>
+          <ion-radio-group [(ngModel)]="answer14">
+            <ion-list-header>
+              Answers:
+            </ion-list-header>
+    
+            <ion-item>
+              <ion-label>1 - Orange and White</ion-label>
+              <ion-radio value="Orange and White" ></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>2 – Black and White</ion-label>
+              <ion-radio value="Black and White"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>3 – Blue and Red</ion-label>
+              <ion-radio value="Blue and Red"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>4 – Yellow and Blue</ion-label>
+              <ion-radio value="Yellow and Blue"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>5 – All Blue</ion-label>
+              <ion-radio value="All Blue"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
+            </ion-card>
+  
+              <ion-button color="secondary" shape="round" expand="full" (click)="goNext()" >SUBMIT</ion-button>
+  
+  
+  
+  </ion-content>
+  
+  <ion-footer>
+      <ion-toolbar color="secondary">
+        <ion-title>Quiz App</ion-title>
+      </ion-toolbar>
+    </ion-footer>
+  
+

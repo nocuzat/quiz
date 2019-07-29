@@ -1,0 +1,81 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+      <ion-title>
+      Section 3
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  
+  <ion-content color= "secondary">
+      <video autoplay muted loop id="myVideo">
+          <source src="/assets/quiz2.mp4" type="video/mp4">
+          </video>
+  
+      <ion-card color="secondary">
+  
+          <ion-card-header>
+          Soccer<br>
+          Question 2
+          
+          </ion-card-header>
+          
+          <ion-card-content>
+          
+          Which of these star soccer players has never played for Real Madrid<br><br>
+
+          Count Down:&nbsp;{{displayTime}}
+          
+          </ion-card-content>
+          
+        </ion-card>
+  
+  <ion-card color="secondary">
+      <ion-list>
+          <ion-radio-group [(ngModel)]="answer12">
+            <ion-list-header>
+              Answers:
+            </ion-list-header>
+    
+            <ion-item>
+              <ion-label>1 - David Beckham</ion-label>
+              <ion-radio value="David Beckham" ></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>2 – Zinedine Zidane</ion-label>
+              <ion-radio value="Zinedine Zidane"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>3 – Ronaldo</ion-label>
+              <ion-radio value="Ronaldo"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>4 – Robinho</ion-label>
+              <ion-radio value="Robinho"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>5 – Lionel Messi</ion-label>
+              <ion-radio value="Lionel Messi"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
+            </ion-card>
+  
+              <ion-button color="secondary" shape="round" expand="full" (click)="goNext()" >SUBMIT</ion-button>
+  
+  
+  
+  </ion-content>
+  
+  <ion-footer>
+      <ion-toolbar color="secondary">
+        <ion-title>Quiz App</ion-title>
+      </ion-toolbar>
+    </ion-footer>
+  
+

@@ -1,0 +1,78 @@
+<ion-header>
+    <ion-toolbar color="tertiary">
+      <ion-title>
+        Section 1
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content color= "medium">
+      <video autoplay muted loop id="myVideo">
+          <source src="/assets/quiz.mp4" type="video/mp4">
+          </video>
+  
+      <ion-card color="tertiary">
+  
+          <ion-card-header>
+          General Knowledge<br>
+          Question 3
+          
+          </ion-card-header>
+          
+          <ion-card-content>
+          
+           Mount Everest is located in <br><br>
+
+           Count Down:&nbsp;{{displayTime}}
+          
+          </ion-card-content>
+          
+        </ion-card>
+  
+  <ion-card color="tertiary">
+      <ion-list>
+          <ion-radio-group [(ngModel)]="answer3">
+            <ion-list-header>
+              Answers:
+            </ion-list-header>
+        
+            <ion-item>
+              <ion-label>1 - India</ion-label>
+              <ion-radio value="India" ></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>2 – Nepal</ion-label>
+              <ion-radio value="Nepal" ></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>3 – Tibet</ion-label>
+              <ion-radio value="Tibet" ></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>4 – China</ion-label>
+              <ion-radio value="China" ></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>5 – Ghana</ion-label>
+              <ion-radio value="Ghana" ></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
+            </ion-card>
+  
+              <ion-button color="tertiary" shape="round" expand="full" (click)=goNext()>SUBMIT</ion-button>
+  
+  
+  
+  </ion-content>
+  
+  <ion-footer>
+      <ion-toolbar color="tertiary">
+        <ion-title>Quiz App</ion-title>
+      </ion-toolbar>
+    </ion-footer>
+  

@@ -1,0 +1,81 @@
+<ion-header>
+    <ion-toolbar color="medium">
+      <ion-title>
+        Section 2
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  
+  <ion-content color= "medium">
+      <video autoplay muted loop id="myVideo">
+          <source src="/assets/quiz4.mp4" type="video/mp4">
+          </video>
+  
+      <ion-card color="medium">
+  
+          <ion-card-header>
+          Plural Form<br>
+          Question 5
+          
+          </ion-card-header>
+          
+          <ion-card-content>
+          
+         Plural form of Quarter<br><br>
+
+         Count Down:&nbsp;{{displayTime}}
+          
+          </ion-card-content>
+          
+        </ion-card>
+  
+  <ion-card color="medium">
+      <ion-list>
+          <ion-radio-group [(ngModel)]="answer10">
+            <ion-list-header>
+              Answers:
+            </ion-list-header>
+    
+            <ion-item>
+              <ion-label>1 - quarteres</ion-label>
+              <ion-radio value="quarteres" ></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>2 – quarterres</ion-label>
+              <ion-radio value="quarterres"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>3 – quarters</ion-label>
+              <ion-radio value="quarters"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>4 – all of the above</ion-label>
+              <ion-radio value="all of the above"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>5 – none of these</ion-label>
+              <ion-radio value="none of these"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
+            </ion-card>
+  
+              <ion-button color="medium" shape="round" expand="full" (click)="goNext()" >SUBMIT AND GO TO SECTION 3</ion-button>
+  
+  
+  
+  </ion-content>
+  
+  <ion-footer>
+      <ion-toolbar color="medium">
+        <ion-title>Quiz App</ion-title>
+      </ion-toolbar>
+    </ion-footer>
+  
+

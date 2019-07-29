@@ -1,0 +1,136 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>Results</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="/assets/quiz.mp4" type="video/mp4">
+        </video>
+
+    <ion-card color="medium" class="bottom">
+        <ion-card-header color="tertiary">
+            
+           Your Answers
+            
+        </ion-card-header>
+    
+        <ion-card-content color="medium">
+          <b>Section 1</b><br>
+          <table width="100%">
+              <tr>
+                <td><b>Question</b></td>
+                <td><b>Answer</b></td>
+                <td><b>Results</b></td>
+              </tr>
+              <tr>
+                <td>No.1</td>
+                <td>{{q1}}</td>
+                <td>{{neg1}}</td>
+              </tr>
+              <tr>
+                <td>No.2</td>
+                <td>{{q2}}</td>
+                <td>{{neg2}}</td>
+                </tr>
+                <tr>
+                  <td>No.3</td>
+                  <td>{{q3}}</td>
+                  <td>{{neg3}}</td>
+                </tr>
+                <tr>
+                  <td>No.4</td>
+                  <td>{{q4}}</td>
+                  <td>{{neg4}}</td>
+                </tr>
+                <tr>
+                  <td>No.5</td>
+                  <td>{{q5}}</td>
+                  <td>{{neg5}}</td>
+                </tr>
+            </table><br><br>
+           <b>Section2</b> <br>
+           <table width="100%">
+              <tr>
+                <td><b>Question</b></td>
+                <td><b>Answer</b></td>
+                <td><b>Results</b></td>
+              </tr>
+              <tr>
+                <td>No.1</td>
+                <td>{{q6}}</td>
+                <td>{{neg6}}</td>
+              </tr>
+              <tr>
+                <td>No.2</td>
+                <td>{{q7}}</td>
+                <td>{{neg7}}</td>
+                </tr>
+                <tr>
+                  <td>No.3</td>
+                  <td>{{q8}}</td>
+                  <td>{{neg8}}</td>
+                </tr>
+                <tr>
+                  <td>No.4</td>
+                  <td>{{q9}}</td>
+                  <td>{{neg9}}</td>
+                </tr>
+                <tr>
+                  <td>No.5</td>
+                  <td>{{q10}}</td>
+                  <td>{{neg10}}</td>
+                </tr>
+            </table><br><br>
+           <b>Section 3</b><br>
+           <table width="100%">
+              <tr>
+                <td><b>Question</b></td>
+                <td><b>Answer</b></td>
+                <td><b>Results</b></td>
+              </tr>
+              <tr>
+                <td>No.1</td>
+                <td>{{q11}}</td>
+                <td>{{neg11}}</td>
+              </tr>
+              <tr>
+                <td>No.2</td>
+                <td>{{q12}}</td>
+                <td>{{neg12}}</td>
+                </tr>
+                <tr>
+                  <td>No.3</td>
+                  <td>{{q13}}</td>
+                  <td>{{neg13}}</td>
+                </tr>
+                <tr>
+                  <td>No.4</td>
+                  <td>{{q14}}</td>
+                  <td>{{neg14}}</td>
+                </tr>
+                <tr>
+                  <td>No.5</td>
+                  <td>{{q15}}</td>
+                  <td>{{neg15}}</td>
+                </tr>
+            </table><br>
+
+            <ion-button color="tertiary" shape="round" expand="full" (click)="show()" [disabled]="disabled">Show total</ion-button>
+            <br>
+            <b>Total Marks : {{total}}&nbsp;/&nbsp;15</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>{{status}}</b>
+            <br>
+            <br>
+            <ion-button color="tertiary" shape="round" expand="full" (click)="goHome()">Done</ion-button>
+        </ion-card-content>
+      </ion-card>
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar color="tertiary">
+      <ion-title>Quiz App</ion-title>
+    </ion-toolbar>
+  </ion-footer>

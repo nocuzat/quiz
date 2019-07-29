@@ -1,0 +1,80 @@
+<ion-header>
+    <ion-toolbar color="medium">
+      <ion-title>
+        Section 2
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  
+  <ion-content color= "medium">
+      <video autoplay muted loop id="myVideo">
+          <source src="/assets/quiz4.mp4" type="video/mp4">
+          </video>
+  
+      <ion-card color="medium">
+  
+          <ion-card-header>
+          Plural Form<br>
+          Question 4
+          
+          </ion-card-header>
+          
+          <ion-card-content>
+          
+          Plural form of Thief<br><br>
+
+          Count Down:&nbsp;{{displayTime}}
+          
+          </ion-card-content>
+          
+        </ion-card>
+  
+  <ion-card color="medium">
+      <ion-list>
+          <ion-radio-group [(ngModel)]="answer9">
+            <ion-list-header>
+              Answers:
+            </ion-list-header>
+    
+            <ion-item>
+              <ion-label>1 - thievs</ion-label>
+              <ion-radio value="thievs" ></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>2 – thivee</ion-label>
+              <ion-radio value="thivee"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>3 – thiefs</ion-label>
+              <ion-radio value="thiefs"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>4 – thif</ion-label>
+              <ion-radio value="thif"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>5 – thieves</ion-label>
+              <ion-radio value="thieves"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
+            </ion-card>
+  
+              <ion-button color="medium" shape="round" expand="full" (click)="goNext()" >SUBMIT</ion-button>
+  
+  
+  
+  </ion-content>
+  
+  <ion-footer>
+      <ion-toolbar color="medium">
+        <ion-title>Quiz App</ion-title>
+      </ion-toolbar>
+    </ion-footer>
+  
