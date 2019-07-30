@@ -17,8 +17,10 @@
 
         <ion-card-header>
         General Knowledge<br><br>
-        Question 1
-        
+        Question 1<br><br>
+
+        <ion-progress-bar color="primary" value="{{stat}}"></ion-progress-bar>
+
         </ion-card-header>
         
         <ion-card-content>
@@ -66,7 +68,7 @@
       </ion-list>
           </ion-card>
 
-            <ion-button color="tertiary" shape="round" expand="full" (click)="goNext()" >SUBMIT</ion-button>
+            <ion-button color="tertiary" shape="round" expand="full" (click)="goNext()">SUBMIT</ion-button>
 
 
 

@@ -22,11 +22,17 @@ hasStarted
 hasFinished
 remainingTime
 displayTime
+stat
 //countdown
 
 
 
   constructor(private route: ActivatedRoute,private router: Router) {
+
+    this.stat=6/15
+    console.log(this.stat)
+
+
     //this.countdown=30100
   }
   

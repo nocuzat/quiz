@@ -31,11 +31,17 @@ export class Page14Page implements OnInit {
   hasFinished
   remainingTime
   displayTime
+  stat
 
 
 
 
-    constructor(private route: ActivatedRoute,private router: Router) {}
+    constructor(private route: ActivatedRoute,private router: Router) {
+      this.stat=14/15
+      console.log(this.stat)
+
+
+    }
    
     goNext() {
       this.router.navigateByUrl("page15")

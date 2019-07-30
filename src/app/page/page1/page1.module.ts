@@ -13,7 +13,6 @@ const routes: Routes = [
     component: Page1Page
   }
 ];
-
 @NgModule({
   imports: [
     CommonModule,

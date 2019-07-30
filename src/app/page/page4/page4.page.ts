@@ -20,11 +20,17 @@ export class Page4Page implements OnInit {
   hasFinished
   remainingTime
   displayTime
+  stat
   //countdown
 
 
 
   constructor(private route: ActivatedRoute,private router: Router) {
+
+    this.stat=4/15
+    console.log(this.stat)
+
+
     //this.countdown=30100
   }
 

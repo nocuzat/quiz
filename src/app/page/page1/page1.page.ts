@@ -17,10 +17,14 @@ hasStarted
 hasFinished
 remainingTime
 displayTime
+stat
+
 //countdown
 
-
   constructor(private router: Router) {
+this.stat=1/15
+console.log(this.stat)
+
 //this.countdown=30100
   }
  
@@ -38,6 +42,8 @@ displayTime
       //this.router.navigateByUrl("page2");
      // this.router.navigate(['/page2'], { queryParams: { answer1: this.answer1 } })
   //}, 30100 );
+
+
 
   this.initTimer();
   this. startTimer();
